@@ -1,0 +1,431 @@
+/*fonts*/
+
+@font-face{
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
+    url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans.woff2") format("woff2"),
+    url("../fonts/PTSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+/*variables*/
+
+:root{
+  --basic-black: #000000;
+  --basic-light-black: #333333;
+  --basic-white: #ffffff;
+  --basic-neutral: #eeeeee;
+  --basic-brown: #766357;
+  --basic-blue: #81b3d2;
+
+  --special :#b1a9a9;
+
+  /*btn & link*/
+
+  --special-brown: #604e43;
+  --special-brown-dark: #503e33;
+
+  --special-blue: #669ec0;
+  --special-blue-dark: #5496bd;
+
+  --special-grey: #bdbbbc;
+
+  /*rare*/
+
+  --rare-black: #333333;
+  --rare-grey: #f2f2f2;
+  --rare-dark-grey: #666666;
+}
+
+/*global*/
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-neutral);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*main navigation*/
+
+.main-navigation {
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:not([href]) {
+  color: var(--basic-brown)
+}
+
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: var(--basic-blue);
+}
+
+/*welcome*/
+
+.welcome {
+  background: var(--special) url("../img/background\ photo.jpg") no-repeat;
+}
+
+/*intro*/
+
+.intro {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  background-color: var(--basic-white);
+}
+
+.intro p:not(:first-of-type) {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*first-reason*/
+
+.first-reason img {
+  background-color: var(--special);
+}
+
+/*reason*/
+
+.reason {
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--basic-blue);
+}
+
+.reason h2 {
+  font-size: 21px;
+}
+
+/*recomendation*/
+
+.recomendation {
+  background-color: var(--basic-white);
+}
+
+.recomendation-list {
+  list-style: none;
+}
+
+.recomendation-item {
+  text-align: center;
+}
+
+.recomendation-item h3{
+  font-size: 21px;
+}
+
+.recomendation-item p{
+  font-weight: 400;
+}
+
+
+/*second-reason*/
+
+.second-reason img {
+  background-color: var(--special);
+}
+
+/*reasons*/
+
+.reasons-list {
+  list-style: none;
+}
+
+.reasons-item {
+  text-align: center;
+}
+
+.reasons-item h2 {
+  font-size: 21px;
+}
+
+.reasons-item p {
+  font-weight: 400;
+}
+
+/*interesting*/
+
+.interesting {
+  text-align: center;
+  background-color: var(--basic-white);
+}
+
+.interesting h2 {
+  font-size: 21px;
+}
+
+.interesting p{
+  font-weight: 400;
+}
+
+/*btn*/
+
+.btn {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+/*btn-poisk*/
+
+.btn-poisk {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+}
+
+.btn-poisk:hover,
+.btn-poisk:focus {
+  background-color: var(--special-brown);
+}
+
+.btn-poisk:active {
+  background-color: var(--special-brown-dark);
+}
+
+.btn-poisk:active span {
+  opacity: 0.3;
+}
+
+/*main-footer*/
+
+.main-footer .wrapper {
+  background-color: var(--basic-white);
+  opacity: 0.9;
+}
+
+/*footer-contacts*/
+
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.footer-phone {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*footer-social*/
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+/*social btn*/
+
+.social-btn{
+  color: inherit;
+}
+
+/*footer-copyright*/
+
+.footer-copyright {
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+
+/*Catalog page*/
+
+/*filters*/
+
+.filters {
+  color: var(--basic-white);
+  background-color: var(--special);
+}
+
+.filter legend {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter ul{
+  font-weight: 400;
+  line-height: 21px;
+  list-style: none;
+}
+
+.filter-range-list {
+  border: 2px solid var(--basic-white);
+}
+
+/*btn-filter*/
+
+.btn-filter{
+  font-weight: 400;
+  background-color: transparent;
+  border: 2px solid var(--basic-white);
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+/*result*/
+
+.result-info {
+  background-color: var(--basic-white);
+}
+
+
+.result-sort-list {
+  list-style: none;
+}
+
+.result-sort-item a {
+  color: var(--basic-black);
+  font-weight: 400;
+  border-bottom: 1px dashed var(--basic-blue);
+}
+
+.result-sort-item a:hover,
+.result-sort-item a:focus {
+  opacity: 1;
+  color: var(--special-blue);
+}
+
+.result-sort-item a:active {
+  opacity: 1;
+  color: var(--basic-black);
+  border: none;
+}
+
+.result-sort-current-item a,
+.result-sort-current-item a:hover,
+.result-sort-current-item a:focus,
+.result-sort-current-item a:active {
+  color: var(--special-blue);
+  opacity: 1;
+  border: none;
+}
+
+/*result-hotel-list*/
+
+.result-hotels-list{
+  background-color: var(--basic-white);
+  list-style: none;
+}
+
+.hotel-item-link {
+  font-size: 21px;
+  line-height: 26px;
+  color:inherit;
+}
+
+.hotel-item-link:hover,
+.hotel-item-link:focus {
+  color: var(--basic-blue);
+}
+
+.hotel-item-link:active {
+  opacity:0.3;
+}
+
+.hotels-list-item img {
+  background-color:  var(--special);
+}
+
+.hotels-list-item p {
+  font-weight: 400;
+}
+
+.hotels-list-item .small-info {
+  color: var(--rare-black);
+}
+
+.rating {
+  color: var(--rare-dark-grey);
+  background-color: var(--rare-grey);
+}
+
+/*btn-info btn-booking*/
+
+.btn-info,
+.btn-booking {
+  color: var(--basic-white);
+}
+
+.btn-info{
+  background-color: var(--basic-blue);
+}
+
+.btn-info:focus,
+.btn-info:hover {
+  background-color: var(--special-blue);
+}
+
+.btn-info:active {
+  background-color: var(--special-blue-dark);
+}
+
+.btn-info:active span{
+  opacity: 0.3;
+}
+
+.btn-booking {
+  background-color: var(--basic-brown);
+}
+
+.btn-booking:focus,
+.btn-booking:hover {
+  background-color: var(--special-brown);
+}
+
+.btn-booking:active {
+  background-color: var(--special-brown-dark);
+}
+
+.btn-booking:active span {
+  opacity: 0.3;
+}
