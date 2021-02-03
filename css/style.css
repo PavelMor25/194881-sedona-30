@@ -142,9 +142,15 @@ img {
   background-color: var(--basic-white);
 }
 
+.intro h2 {
+  padding: 0;
+  margin: 0;
+}
+
 .intro p:not(:first-of-type) {
   font-size: 14px;
   font-weight: 400;
+  margin: 0;
 }
 
 /*first-reason*/
@@ -168,7 +174,10 @@ img {
 
 .reason h2 {
   font-size: 21px;
+  margin: 0;
+  padding: 0;
 }
+
 
 /*recomendation*/
 
@@ -176,10 +185,17 @@ img {
   background-color: var(--basic-white);
 }
 
+.recomendation h2 {
+  padding: 0;
+  margin: 0;
+}
+
 .recomendation-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .recomendation-item {
