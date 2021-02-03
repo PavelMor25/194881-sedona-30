@@ -121,17 +121,10 @@ img {
 /*wrapper*/
 
 .wrapper {
-  display: grid;
   width: 1200px;
   margin: 0 auto;
   padding: 0;
   box-shadow: 0 5px 15px var(--shadow);
-}
-
-/* container */
-
-.container {
-  display: grid;
 }
 
 /*welcome*/
@@ -396,10 +389,6 @@ img {
 }
 
 /*result*/
-
-.result {
-  display: grid;
-}
 
 .result-info {
   background-color: var(--basic-white);
