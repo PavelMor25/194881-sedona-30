@@ -101,9 +101,8 @@ img {
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  padding: 0;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 15px 50px;
+
 }
 
 .site-navigation li {
@@ -167,20 +166,19 @@ img {
   line-height: 26px;
   text-align: center;
   background-color: var(--basic-white);
+  padding-top: 46px;
+  padding-bottom: 51px;
 }
 
-.intro h2 {
-  padding: 0;
+.intro p {
   margin: 0;
+  padding: 0;
 }
-
 
 .intro p:not(:first-of-type) {
   font-size: 14px;
   font-weight: 400;
-  margin: 0;
-  padding-bottom: 51px;
-  padding-top: 48px;
+  margin-top: 48px;
 }
 
 /*first-reason*/
@@ -204,6 +202,7 @@ img {
   background-color: var(--basic-blue);
   padding-top: 47px;
   color: var(--basic-white);
+  padding: 50px 46px;
 }
 
 .reason h2 {
@@ -211,11 +210,6 @@ img {
   margin: 0;
   padding: 0;
 }
-
-.reason p:not(:first-of-type) {
-  padding-left: 50px;
-}
-
 
 /*recomendation*/
 
@@ -235,17 +229,14 @@ img {
   margin: 0;
   padding: 0;
   padding-bottom: 82px;
+  padding-top: 60px;
 }
 
 .recomendation-item {
+  box-sizing:  border-box;
   text-align: center;
-  width: 330px;
-  padding-left: 50px;
-  margin-right: 20px;
-}
-
-.recomendation-item:nth-of-type(3n) {
-  margin-right: 0;
+  width: 400px;
+  padding: 0 50px;
 }
 
 .recomendation-item h3{
@@ -282,7 +273,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--basic-neutral);
-  /* grid-template-columns: repeat(3, 1fr); */
   list-style: none;
   margin: 0;
   padding: 0;
@@ -291,10 +281,10 @@ img {
 }
 
 .reasons-item {
+  box-sizing: border-box;
   text-align: center;
-  width: 330px;
-  padding-left: 50px;
-  margin-right: 20px;
+  width: 400px;
+  padding: 0 70px;
 }
 
 .recomendation-item:nth-of-type(3n) {
@@ -367,11 +357,19 @@ img {
   grid-template-columns: repeat(3, 1fr);
   background-color: var(--basic-white);
   opacity: 0.9;
+  padding-top: 23px;
+  padding-bottom: 36px;
 }
 
 .footer-wrapper section{
   width: 400px;
 }
+
+.main-footer p {
+  margin: 0;
+  padding: 0;
+}
+
 /*footer-contacts*/
 
 .footer-contacts {
@@ -393,6 +391,8 @@ img {
 
 .footer-social ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /*social btn*/
@@ -424,8 +424,9 @@ img {
   flex-wrap: wrap;
   padding-left: 50px;
   padding-right: 50px;
-
+  padding-top: 26.5px;
   height: 217px;
+  box-sizing: border-box;
 }
 
 .filter fieldset {
@@ -499,7 +500,7 @@ img {
   align-self: center;
   padding-left: 35px;
   padding-right: 35px;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .btn-filter:hover,
@@ -515,12 +516,19 @@ img {
   background-color: var(--basic-white);
   padding-left: 30px;
   padding-right: 50px;
+  padding-top: 27px;
 }
 
 .result-info p {
+  font-size: 21px;
   width: 150px;
   padding: 0;
   margin: 0;
+}
+
+.result-info p:not(:first-child) {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .result-sort-list {
@@ -587,7 +595,9 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   height: 90px;
-  padding: 30px 50px;
+  padding: 29px 50px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotels-list-item h3{
