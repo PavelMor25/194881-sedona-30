@@ -145,6 +145,14 @@ img {
   box-shadow: 0 5px 15px var(--shadow);
 }
 
+.visually-hidden{
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 /*welcome*/
 
 .welcome {
