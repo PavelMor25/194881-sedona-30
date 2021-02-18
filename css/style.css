@@ -411,6 +411,167 @@ img {
   opacity: 0.3;
 }
 
+/* form-poisk */
+
+.form-poisk {
+  font-size: 14px;
+  position: absolute;
+  left: 316px;
+  box-sizing: border-box;
+  width: 568px;
+  padding: 55px;
+  box-shadow: 0px 7px 15px var(--shadow);
+  background-color: var(--basic-white);
+}
+
+.form-poisk form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-poisk p {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+.date-entering,
+.date-ending {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-poisk input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: var(--rare-grey);
+}
+
+.form-poisk input:hover {
+  background-color: var(--rare-neutral-dark);
+}
+
+.form-poisk input:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--rare-dark);
+}
+
+.input-date-ending,
+.input-date-entering {
+  width: 346px;
+  height: 38px;;
+}
+
+.date-ending svg,
+.date-entering svg {
+  position: absolute;
+  width: 21px;
+  height: 23px;
+  right: 64px;
+}
+
+.input-adult,
+.input-child {
+  text-align: center;
+  width: 114px;
+  height: 38px;
+}
+
+.rectangle {
+  position: absolute;
+  width: 12px;
+  height: 3px;
+}
+
+.union {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+}
+
+
+.adult .rectangle {
+  left: 180px;
+}
+
+.adult .union {
+  left: 256px;
+}
+
+.child .rectangle {
+  right: 143px;
+}
+
+.child .union {
+  right: 68px;
+}
+
+.calendar:hover path,
+.rectangle:hover rect,
+.union:hover path {
+  fill: var(--basic-black);
+}
+
+.calendar:active path,
+.rectangle:active rect,
+.union:active path {
+  fill: var(--basic-blue);
+}
+
+
+.adult,
+.child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adult {
+  width: 226px;
+}
+
+.child {
+ width: 178px;
+}
+
+
+.form-poisk p:nth-of-type(3) {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.btn-form-poisk {
+  font-size: 21px;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  height: 58px;
+  margin-top: 24px;
+}
+
+.btn-form-poisk:hover,
+.btn-form-poisk:focus {
+  background-color: var(--special-blue);
+}
+
+.btn-form-poisk:active {
+  background-color: var(--special-blue-dark);
+}
+
+.btn-form-poisk:active span {
+  opacity: 0.3;
+}
+
+/* map */
+
+.map {
+  height: 473px;
+  background-image: url(../img/map.jpg);
+}
+
+
 /*main-footer*/
 
 .main-footer .footer-wrapper {
