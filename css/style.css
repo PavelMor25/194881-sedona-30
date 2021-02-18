@@ -483,6 +483,9 @@ img {
 }
 
 .form-poisk input {
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -499,10 +502,11 @@ img {
   border: 2px solid var(--rare-dark);
 }
 
-.input-date-ending,
-.input-date-entering {
+.form-poisk .input-date-ending,
+.form-poisk .input-date-entering {
   width: 346px;
-  height: 38px;;
+  height: 38px;
+  padding-left: 12px;
 }
 
 .date-ending svg,
