@@ -347,6 +347,8 @@ img {
 /*reasons*/
 
 .reasons-list {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-wrap: wrap;
   background-color: var(--basic-neutral);
@@ -354,7 +356,7 @@ img {
   margin: 0;
   padding: 0;
   padding-top: 47px;
-  padding-bottom: 54px;
+  padding-bottom: 34px;
 }
 
 .reasons-item {
@@ -362,6 +364,7 @@ img {
   text-align: center;
   width: 400px;
   padding: 0 71px;
+  margin-bottom: 20px;
 }
 
 .recomendation-item:nth-of-type(3n) {
@@ -384,6 +387,8 @@ img {
 /*interesting*/
 
 .interesting {
+  position: relative;
+  z-index: 2;
   text-align: center;
   line-height: 23px;
   background-color: var(--basic-white);
@@ -424,7 +429,7 @@ img {
   background-color: var(--basic-brown);
   width: 568px;
   height: 86px;
-  margin-top: 43px;
+  margin-top: 45px;
 }
 
 .btn-poisk:hover,
@@ -440,12 +445,19 @@ img {
   opacity: 0.3;
 }
 
-/* form-poisk */
+/* popup-poisk */
 
-.form-poisk {
+.booking {
+  position: relative;
+}
+
+.popup-poisk {
+  display: none;
+  z-index: 1;
   font-size: 14px;
   position: absolute;
   left: 316px;
+  top: 0;
   box-sizing: border-box;
   width: 568px;
   padding: 55px;
@@ -453,12 +465,17 @@ img {
   background-color: var(--basic-white);
 }
 
-.form-poisk form {
+.popup--open {
+  display:block;
+  animation: down-scroll 0.6s;
+}
+
+.popup-poisk form {
   display: flex;
   flex-direction: column;
 }
 
-.form-poisk p {
+.popup-poisk p {
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
@@ -470,7 +487,7 @@ img {
   justify-content: space-between;
 }
 
-.form-poisk input {
+.popup-poisk input {
   font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
@@ -481,17 +498,17 @@ img {
   background-color: var(--rare-grey);
 }
 
-.form-poisk input:hover {
+.popup-poisk input:hover {
   background-color: var(--rare-neutral-dark);
 }
 
-.form-poisk input:focus {
+.popup-poisk input:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--rare-dark);
 }
 
-.form-poisk .input-date-ending,
-.form-poisk .input-date-entering {
+.popup-poisk .input-date-ending,
+.popup-poisk .input-date-entering {
   width: 346px;
   height: 38px;
   padding-left: 12px;
@@ -577,7 +594,7 @@ img {
  width: 178px;
 }
 
-.form-poisk p:nth-of-type(3) {
+.popup-poisk p:nth-of-type(3) {
   display: flex;
   justify-content: space-between;
 }
@@ -606,11 +623,16 @@ img {
 /* map */
 
 .map {
-  height: 473px;
+  position: absolute;
+  height: 594px;
   background-image: url(../img/map.jpg);
+
 }
 
 /*main-footer*/
+.index-page .main-footer {
+  margin-top: 473px;
+}
 
 .main-footer .footer-wrapper {
   display: grid;
