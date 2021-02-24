@@ -1180,3 +1180,15 @@ img {
 .btn-booking:active span {
   opacity: 0.3;
 }
+
+/* animation */
+
+@keyframes down-scroll {
+  0% {
+    transform: translateY(-396px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+
+}
