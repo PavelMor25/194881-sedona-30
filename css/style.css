@@ -457,7 +457,7 @@ img {
   font-size: 14px;
   position: absolute;
   left: 316px;
-  top: 0;
+  top: -2px;
   box-sizing: border-box;
   width: 568px;
   padding: 55px;
@@ -476,10 +476,12 @@ img {
 }
 
 .popup-poisk p {
+  position: relative;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
 }
+
 .date-entering,
 .date-ending {
   display: flex;
@@ -514,12 +516,13 @@ img {
   padding-left: 12px;
 }
 
-.date-ending svg,
-.date-entering svg {
+/* .date-entering svg, */
+
+.calendar {
   position: absolute;
-  width: 21px;
-  height: 23px;
-  right: 64px;
+  background-color: transparent;
+  right: 3px;
+  top: 7px;
 }
 
 .input-adult,
@@ -531,31 +534,33 @@ img {
 
 .rectangle {
   position: absolute;
-  width: 12px;
-  height: 3px;
+  background-color: transparent;
 }
 
 .union {
   position: absolute;
-  width: 11px;
-  height: 11px;
+  background-color: transparent;
 }
 
 
-.adult .rectangle {
-  left: 180px;
+.rectangle-adult {
+  left: 119px;
+  top: 5px
 }
 
-.adult .union {
-  left: 256px;
+.union-adult {
+  left: 195px;
+  top: 8px;
 }
 
-.child .rectangle {
-  right: 143px;
+.rectangle-child {
+  right: 82px;
+  top: 5px;
 }
 
-.child .union {
-  right: 68px;
+.union-child {
+  right: 7px;
+  top: 8px;
 }
 
 .calendar:focus,
@@ -639,7 +644,7 @@ img {
   grid-template-columns: repeat(3, 400px);
   background-color: var(--basic-white);
   opacity: 0.9;
-  padding-top: 21px;
+  padding-top: 20px;
   padding-bottom: 36px;
 }
 
@@ -652,7 +657,7 @@ img {
 
 .footer-contacts {
   font-size: 21px;
-  line-height: 33px;
+  line-height: 35px;
   text-align: center;
   padding-left: 74px;
 }
@@ -676,7 +681,7 @@ img {
   list-style: none;
   margin: 0 auto;
   padding: 0;
-  padding-top: 14px;
+  padding-top: 17px;
 }
 
 /*social btn*/
