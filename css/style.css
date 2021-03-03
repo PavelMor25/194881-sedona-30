@@ -173,7 +173,7 @@ img {
 .welcome {
   position: relative;
   background-color: var(--special);
-  background-image: url("../img/background\ photo.jpg");
+  background-image: url(../img/background-photo.jpg);
 
   height: 509px;
 }
